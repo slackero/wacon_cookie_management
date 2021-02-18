@@ -67,7 +67,7 @@ class CookieController extends ActionController {
             }
         }
 
-        $this->view->assign('uid', $this->configurationManager->getContentObjectRenderer()->data['uid']);
+        $this->view->assign('uid', $this->configurationManager->getContentObject()->data['uid']);
         $this->view->assign('cookietext', $this->settings['text']);
         $this->view->assign('content1', $content1);
         $this->view->assign('content2', $content2);
